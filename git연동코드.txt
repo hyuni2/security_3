@@ -1,0 +1,18 @@
+코드 작성할 ansible설치된 서버에서 실행 
+sudo dnf install git
+git --version
+ls -al
+cd .ssh
+ls -al 
+cat ~/.ssh/authorized_key
+복사 붙여넣기 
+https://github.com/hyuni2/security_3/settings/keys -> 들어가서 add deploy key 
+ls -al ~./ssh -> id_rsa, id_rsa.pub, known_hosts, known_hosts.old 생성 됐는지 확인
+git clone git@github.com:사용자이름/security_3
+ssh -T git@github.com ->
+Hi hyuni2/security_3! You've successfully authenticated, but GitHub does not provide shell access.
+이런 문구 뜨면 성공 
+echo "This is a test file.자기이름." > test이름.txt    (파일 생성되는지 테스트)
+git add test이름.txt 
+git commit -m "Add test이름.txt file"
+git push origin main 
