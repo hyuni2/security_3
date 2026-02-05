@@ -15,4 +15,5 @@ Hi hyuni2/security_3! You've successfully authenticated, but GitHub does not pro
 echo "This is a test file.자기이름." > test이름.txt    (파일 생성되는지 테스트)
 git add test이름.txt 
 git commit -m "Add test이름.txt file"
+
 git push origin main 
